@@ -165,7 +165,7 @@ void right_sensor(){
   delayMicroseconds(2);
   digitalWrite(trig_right, LOW);
   // get the time and distance using the echo_right sensor 
-  double time_right = pulseI0n(echo_right, HIGH);
+  double time_right = pulseIn(echo_right, HIGH);
   distance_right = (time_right * 0.034)/2;
 }
 
